@@ -153,10 +153,10 @@ Due Date: 2026-05-25
 ```
 ---
 ## Acknowledgments
-Mentor: Rachamalla Sai Arnav Goud - 25881A05DW
-Leader: Cheera Shrejal 	          - 25881A05DY
-        Bachu Bhavya Sri          - 25881A05CM
-        Vadithyavath Ganesh       - 25881A05CR
-        Kummari Govardhan 	      - 25881A05CS
+Mentor: Rachamalla Sai Arnav Goud - 25881A05DW<br>
+Leader: Cheera Shrejal 	          - 25881A05DY<br>
+        Bachu Bhavya Sri          - 25881A05CM<br>
+        Vadithyavath Ganesh       - 25881A05CR<br>
+        Kummari Govardhan 	      - 25881A05CS<br>
 
 Institution: Vardhaman College of Engineering
