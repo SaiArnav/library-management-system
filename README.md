@@ -82,7 +82,7 @@ Page	Function
 👤 Register	Add new members
 🔍 Search	Search books/members
 📤 Issue	Issue a book
-📥 Return	Return a book
+📥 Return	Return a book 
 📊 Reports	View library data
 📡 API Endpoints
 Method	Endpoint	Description
