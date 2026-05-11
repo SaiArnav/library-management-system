@@ -117,4 +117,33 @@ http://localhost:5000
 | POST | /api/return | Return a borrowed book |
 | GET | /api/reports/issued | Get list of currently issued books |
 | GET | /api/reports/books | Get complete book inventory |
-| GET | /api/reports/members | Get all member details | 
+| GET | /api/reports/members | Get all member details |
+
+
+## 🧠 Technology Stack
+
+| Layer | Technology | Purpose |
+|------|------------|---------|
+| Frontend | HTML, CSS, JavaScript | User interface and interactivity |
+| Backend | Python Flask | REST API and request handling |
+| Core Logic | C++ | High-performance library operations |
+| Storage | Binary `.dat` files | Persistent data storage |
+| Build Tool | Make | C++ compilation automation |
+
+
+## 👥 Team Members
+
+- **Arnav** – Backend & Flask API Integration  
+- **Shrejal** – C++ Core Logic Development  
+- **Govardhan** – Frontend UI/UX Design (HTML & CSS)  
+- **Ganesh** – JavaScript & API Integration  
+- **Bhavya Sri** – Documentation & Data Management
+
+📊 Sample Output
+Book Issued Successfully!
+────────────────────────────
+Book: The Great Gatsby
+Member: John Doe (ID: M001)
+Issue Date: 2026-05-11
+Due Date: 2026-05-25
+────────────────────────────
