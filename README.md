@@ -1,1 +1,4 @@
-# library-management-system
+                             library-management-system: 
+
+problem statement:
+In many schools and colleges, libraries still use paper registers to track books. The librarian writes down the student's name, book title, and issue date by hand. When a book is returned, the librarian searches through many pages to find the original entry and then writes the return date. This manual process is slow, error-prone, and risky. Entries can be written incorrectly, pages can be lost or damaged, and finding a single record takes a lot of time. Also, there is no easy way to know which books are currently available without asking the librarian. Students often come to the library only to find that the book they want is already issued to someone else. There is also no automatic check to stop a student from taking more books than the allowed limit.
