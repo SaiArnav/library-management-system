@@ -117,4 +117,4 @@ http://localhost:5000
 | POST | /api/return | Return a borrowed book |
 | GET | /api/reports/issued | Get list of currently issued books |
 | GET | /api/reports/books | Get complete book inventory |
-| GET | /api/reports/members | Get all member details |
+| GET | /api/reports/members | Get all member details | 
