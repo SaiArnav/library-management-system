@@ -2,8 +2,7 @@
 # 📚 Library Management System
 
 A complete web-based Library Management System that mimics real-world library operations. It manages books, members, and book issuance/returns using a hybrid architecture:
-
-- ⚙️ C++ for core logic  
+ 
 - 🌐 Python Flask for REST API  
 - 🎨 HTML/CSS/JavaScript for frontend UI  
 
@@ -16,10 +15,9 @@ The system includes persistent storage using binary files and a responsive dashb
 - 📖 Book Management (Add, Search, View Books)
 - 👤 Member Management (Register Members with Unique IDs)
 - 🔄 Issue & Return System with Due Date Tracking
-- 💾 Persistent Storage using `.dat` binary files
+- 💾 Persistent Storage using `.txt` text files
 - 📊 Real-time Reports Dashboard
 - 🌐 RESTful API using Flask
-- ⚡ High-performance C++ backend logic
 - 📱 Responsive Web Interface (6 Pages)
 
 ---
@@ -30,32 +28,24 @@ The system includes persistent storage using binary files and a responsive dashb
 library-management-system/
 │
 ├── backend/
-│ ├── app.py # Flask main application
-│ ├── config.py # Configuration settings
-│ └── cpp/
-│ ├── library.cpp # C++ core logic
-│ ├── library.h # Header file
-│ └── Makefile # Build automation
+│   └── app.py                 # Flask API (only backend file needed)
 │
 ├── data/
-│ ├── books.dat # Book records
-│ ├── members.dat # Member records
-│ └── issued.dat # Issued books records
+│   ├── books.txt              # Stores books (ID|Title|Author|Genre|Available)
+│   └── members.txt            # Stores members (ID|Name)
 │
 ├── frontend/
-│ ├── index.html # Dashboard
-│ ├── register.html # Add members
-│ ├── search.html # Search books
-│ ├── issue.html # Issue books
-│ ├── return.html # Return books
-│ ├── reports.html # Reports page
-│ ├── style.css # Styling
-│ ├── main.js # Frontend logic
-│ └── api.js # API integration
+│   ├── index.html             # Dashboard homepage
+│   ├── register.html          # Register members page
+│   ├── search.html            # Search books page
+│   ├── issue.html             # Issue/Return books page
+│   ├── reports.html           # Reports page
+│   ├── style.css              # All styling
+│   ├── main.js                # All JavaScript logic
+│   └── api.js                 # API calls to Flask
 │
-├── requirements.txt # Python dependencies
-├── run.bat # Windows startup script
-└── README.md
+├── requirements.txt           # Python packages (flask, flask-cors)
+└── run.bat                    # One-click startup script
 
 ```
 
@@ -63,25 +53,19 @@ library-management-system/
 
 ## ⚙️ Setup Instructions
 
-```bash
+```
 # 1️⃣ Clone the repository
 git clone https://github.com/your-username/library-management-system.git
 cd library-management-system
 
-# 2️⃣ Build the C++ backend
-cd backend/cpp
-make
-cd ../..
-
-# 3️⃣ Install Python dependencies
+# 2️⃣ Install Python dependencies
 pip install -r requirements.txt
 
-# 4️⃣ Run the Flask backend server
+# 3️⃣ Run the Flask backend server
 python backend/app.py
 
-# 5️⃣ Open the application in browser
+# 4️⃣ Open the application in browser
 http://localhost:5000
-
 ---
 ```
 ## 🕹️ Pages Overview
@@ -128,28 +112,7 @@ http://localhost:5000
 |------------|-----------------------|-------------------------------------|
 | Frontend   | HTML, CSS, JavaScript | User interface and interactivity    |
 | Backend    | Python Flask          | REST API and request handling       |
-| Core Logic | C++                   | High-performance library operations |
 | Storage    | Binary `.dat` files   | Persistent data storage             |
-| Build Tool | Make                  | C++ compilation automation          |
-```
----
-
-## 👥 Team Members
-
-- **Arnav** – Backend & Flask API Integration  
-- **Shrejal** – C++ Core Logic Development  
-- **Govardhan** – Frontend UI/UX Design (HTML & CSS)  
-- **Ganesh** – JavaScript & API Integration  
-- **Bhavya Sri** – Documentation & Data Management
-```
-📊 Sample Output
-Book Issued Successfully!
-────────────────────────────
-Book: The Great Gatsby
-Member: John Doe (ID: M001)
-Issue Date: 2026-05-11
-Due Date: 2026-05-25
-────────────────────────────
 ```
 ---
 ## Acknowledgments
