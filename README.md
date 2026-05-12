@@ -32,7 +32,8 @@ library-management-system/
 │
 ├── data/
 │   ├── books.txt              # Stores books (ID|Title|Author|Genre|Available)
-│   └── members.txt            # Stores members (ID|Name)
+│   ├── members.txt            # Stores members (ID|Name)
+|   └── issued.txt             # Stores issued books (BookID|MemberID|MemberName|IssueDate|DueDate)
 │
 ├── frontend/
 │   ├── index.html             # Dashboard homepage
