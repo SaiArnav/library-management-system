@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LibraNet — Register Member</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><strong>Libra</strong>Net</div>
+  <ul class="nav-links">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="register.html" class="active">👤 Register</a></li>
+    <li><a href="search.html">🔍 Search</a></li>
+    <li><a href="issue.html">📖 Issue / Return</a></li>
+    <li><a href="reports.html">📊 Reports</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div style="max-width: 520px; margin: 0 auto;">
+    
+    <!-- Register Form -->
+    <div class="card" style="margin-bottom: 24px;">
+      <div class="card-title">👤 Register New Member</div>
+      <label class="flabel">Member ID</label>
+      <input class="input" id="memberID" placeholder="e.g. M001">
+      <label class="flabel">Full Name</label>
+      <input class="input" id="memberName" placeholder="e.g. John Doe">
+      <button class="btn-purple" onclick="registerMember()">Register Member</button>
+      <div id="registerResult"></div>
+    </div>
+
+    <!-- Members List -->
+    <div class="card">
+      <div class="card-title">📋 All Members</div>
+      <div id="membersList"></div>
+    </div>
+    
+  </div>
+  <div class="footer">LibraNet &middot; VCE &middot; Library Management System</div>
+</div>
+
+<script src="api.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
