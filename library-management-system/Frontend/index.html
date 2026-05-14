@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LibraNet — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><strong>Libra</strong>Net</div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">🏠 Home</a></li>
+    <li><a href="register.html">👤 Register</a></li>
+    <li><a href="search.html">🔍 Search</a></li>
+    <li><a href="issue.html">📖 Issue / Return</a></li>
+    <li><a href="reports.html">📊 Reports</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <!-- BANNER -->
+  <div class="welcome">
+    <div>
+      <h1>Welcome to LibraNet 📖</h1>
+      <p>Issue books, manage members, track returns and fines — all in one place.</p>
+    </div>
+    <button class="welcome-btn" onclick="addNewBook()">+ Add New Book</button>
+  </div>
+
+  <!-- STATS CARDS -->
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-icon purple">📚</div>
+      <div>
+        <div class="stat-num" id="totalBooks">0</div>
+        <div class="stat-lbl">Total Books</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon blue">👥</div>
+      <div>
+        <div class="stat-num" id="totalMembers">0</div>
+        <div class="stat-lbl">Members</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon amber">📤</div>
+      <div>
+        <div class="stat-num" id="totalIssued">0</div>
+        <div class="stat-lbl">Issued Books</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon red">⚠️</div>
+      <div>
+        <div class="stat-num" id="totalOverdue">0</div>
+        <div class="stat-lbl">Overdue</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD BOOK SECTION -->
+  <div class="card" style="margin-bottom: 20px;">
+    <div class="card-title">➕ Add New Book</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+      <input class="input" id="bookID" placeholder="Book ID (e.g., B001)">
+      <input class="input" id="bookTitle" placeholder="Title">
+      <input class="input" id="bookAuthor" placeholder="Author">
+      <input class="input" id="bookGenre" placeholder="Genre">
+    </div>
+    <button class="btn-purple" onclick="addNewBook()" style="margin-top: 12px; width: 100%;">➕ Add Book</button>
+    <div id="addBookResult"></div>
+  </div>
+
+  <!-- MAIN GRID (Search + Issue/Return) -->
+  <div class="main-grid">
+    <!-- Search Card -->
+    <div class="card">
+      <div class="card-title">🔍 Search Books</div>
+      <div class="filter-tabs">
+        <button class="ftab active" onclick="setTab(this,'title')">By Title</button>
+        <button class="ftab" onclick="setTab(this,'author')">By Author</button>
+        <button class="ftab" onclick="setTab(this,'id')">By Book ID</button>
+      </div>
+      <div class="search-row">
+        <input class="s-input" id="searchInput" placeholder="e.g. Harry Potter...">
+        <button class="s-btn" onclick="doSearch()">Search</button>
+      </div>
+      <div id="searchResults"></div>
+    </div>
+
+    <!-- Issue + Return Card -->
+    <div class="card">
+      <div class="card-title">📖 Issue a Book</div>
+      <label class="flabel">Book ID</label>
+      <input class="input" id="issueBookID" placeholder="e.g. B001">
+      <label class="flabel">Member ID</label>
+      <input class="input" id="issueMemberID" placeholder="e.g. M001">
+      <div class="info-box">📅 Due date: <strong>7 days</strong> from today</div>
+      <button class="btn-purple" onclick="issueBook()">✅ Issue Book</button>
+      <div id="issueResult"></div>
+      <div class="divider">or return a book</div>
+      <div class="card-title" style="margin-bottom:13px;">🔁 Return a Book</div>
+      <label class="flabel">Book ID</label>
+      <input class="input" id="returnBookID" placeholder="e.g. B002">
+      <div class="warn-box" id="fineDisplay" style="display:none;"></div>
+      <button class="btn-red" onclick="returnBook()">🔁 Return Book</button>
+      <div id="returnResult"></div>
+    </div>
+  </div>
+
+  <!-- BOTTOM GRID (Overdue + Recommendations) -->
+  <div class="bottom-grid">
+    <div class="card">
+      <div class="card-title">⚠️ Overdue Books</div>
+      <div id="overdueList"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">💡 You Might Also Like</div>
+      <div style="font-size:0.73rem;color:#a78bfa;margin-top:-10px;margin-bottom:14px;">
+        Based on recently returned book
+      </div>
+      <div id="recList"></div>
+    </div>
+  </div>
+
+  <div class="footer">LibraNet &middot; VCE &middot; Library Management System</div>
+</div>
+
+<script src="api.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+📝 Page Sections:
+🎯 Stats Cards - 4 boxes showing live counts (updated by JavaScript)
+➕ Add Book - Form to add new books to library
+🔍 Search - Search by Title, Author, or Book ID
+📖 Issue/Return - Borrow a book or return a book
+⚠️ Overdue - Shows books that are late with fines
+💡 Recommendations - Suggests similar books
+
+
+
