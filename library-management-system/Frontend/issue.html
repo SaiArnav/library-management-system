@@ -1,0 +1,56 @@
+Issue books to members (7-day loan period) and return books (with fine calculation for late returns).
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LibraNet — Issue / Return</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><strong>Libra</strong>Net</div>
+  <ul class="nav-links">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="register.html">👤 Register</a></li>
+    <li><a href="search.html">🔍 Search</a></li>
+    <li><a href="issue.html" class="active">📖 Issue / Return</a></li>
+    <li><a href="reports.html">📊 Reports</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div style="max-width: 520px; margin: 0 auto;">
+    
+    <!-- Issue Card -->
+    <div class="card" style="margin-bottom: 18px;">
+      <div class="card-title">📖 Issue a Book</div>
+      <label class="flabel">Book ID</label>
+      <input class="input" id="issueBookID" placeholder="e.g. B001">
+      <label class="flabel">Member ID</label>
+      <input class="input" id="issueMemberID" placeholder="e.g. M001">
+      <div class="info-box">📅 Due date: <strong>7 days</strong> from today</div>
+      <button class="btn-purple" onclick="issueBook()">✅ Issue Book</button>
+      <div id="issueResult"></div>
+    </div>
+
+    <!-- Return Card -->
+    <div class="card">
+      <div class="card-title">🔁 Return a Book</div>
+      <label class="flabel">Book ID</label>
+      <input class="input" id="returnBookID" placeholder="e.g. B002">
+      <div class="warn-box" id="fineDisplay" style="display:none;"></div>
+      <button class="btn-red" onclick="returnBook()">🔁 Return Book</button>
+      <div id="returnResult"></div>
+    </div>
+    
+  </div>
+  <div class="footer">LibraNet &middot; VCE &middot; Library Management System</div>
+</div>
+
+<script src="api.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
