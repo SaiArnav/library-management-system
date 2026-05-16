@@ -50,6 +50,14 @@ Helps users discover related books easily
 
 ➤ Coordinate complete project execution
 
+🔸 Shrejal — C++ Logic Lead
+
+➤ Develop core logic using C++
+
+➤ Implement issue and return operations
+
+➤ Create fine calculation system
+
 
 📅 Week-by-Week Mini Plan
 ✅ Week 1
