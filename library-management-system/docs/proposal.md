@@ -29,7 +29,7 @@ The system is implemented using C++ programming and file handling techniques for
 
 
 
-🤖 AI Feature Description
+🤖 AI Feature Description:
 
 The project includes a simple AI-based book recommendation feature. Based on the category or author of previously issued books, the system suggests similar books to users.
 
