@@ -44,11 +44,11 @@ Helps users discover related books easily
 
 🔸 Arnav — Program Integration Lead
 
-. Integrate all modules
+➤  Integrate all modules
 
-. Manage menu-driven operations
+➤ Manage menu-driven operations
 
-. Coordinate complete project execution
+➤ Coordinate complete project execution
 
 
 📅 Week-by-Week Mini Plan
