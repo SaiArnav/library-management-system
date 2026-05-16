@@ -41,8 +41,9 @@ Demonstrates intelligent system behaviour
 Helps users discover related books easily
 
 👨‍💻 Team Member Roles
-🔸 Arnav — Program Integration Lead
-Integrate all modules
+
+🔸 Arnav — Program Integration Lead Integrate all modules
+
 Manage menu-driven operations
 Coordinate complete project execution
 
