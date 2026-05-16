@@ -6,17 +6,27 @@ The Library Book Issue & Return System is a console-based application developed 
 
 The system is implemented using C++ programming and file handling techniques for permanent data storage. It provides an easy and efficient way to maintain library records without using manual registers.
 
+
 ⭐ Core Features
 
 ✔️ Add and manage books
+
 ✔️ Search books by title or author
+
 ✔️ Register library members
+
 ✔️ Issue books to members
+
 ✔️ Return books and update availability
+
 ✔️ Fine calculation for overdue books
+
 ✔️ Generate reports for available and issued books
+
 ✔️ File handling for permanent data storage
+
 ✔️ Menu-driven console interface
+
 
 🤖 AI Feature Description
 
