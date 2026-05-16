@@ -4,7 +4,7 @@
 
 The Library Book Issue & Return System is a console-based application developed to simplify library management operations. The project helps librarians manage books, register members, issue and return books, search records, and generate reports efficiently through a menu-driven interface.
 
-The system is implemented using C++ programming and file handling techniques for permanent data storage. It provides an easy and efficient way to maintain library records without using manual registers.
+The system is implemented using C programming and file handling techniques for permanent data storage. It provides an easy and efficient way to maintain library records without using manual registers.
 
 
 ⭐ Core Features
@@ -50,9 +50,9 @@ Helps users discover related books easily
 
 ➤ Coordinate complete project execution
 
-🔸 Shrejal — C++ Logic Lead
+🔸 Shrejal — C Logic Lead
 
-➤ Develop core logic using C++
+➤ Develop core logic using C
 
 ➤ Implement issue and return operations
 
@@ -120,9 +120,7 @@ Helps users discover related books easily
 
 🛠️ Technologies Used:
 
-💻 C++
-
-💻 Object-Oriented Programming (OOP)
+💻 C
 
 💻 File Handling
 
@@ -137,8 +135,6 @@ The project provides an efficient and user-friendly way to manage library operat
 
 
 ✔️ File Handling
-
-✔️ Object-Oriented Programming
 
 ✔️ Menu-Driven Applications
 
