@@ -41,45 +41,10 @@ Demonstrates intelligent system behaviour
 Helps users discover related books easily
 
 👨‍💻 Team Member Roles
-
 🔸 Arnav — Program Integration Lead
 Integrate all modules
-
 Manage menu-driven operations
-
 Coordinate complete project execution
-
-🔸 Shrejal — C++ Logic Lead
-
-Develop core logic using C++
-
-Implement issue and return operations
-
-Create fine calculation system
-
-🔸 Govardhan — File Handling Lead
-
-Implement file handling operations
-
-Maintain book and member records
-
-Handle data storage and retrieval
-
-🔸 Ganesh — Testing & Debugging
-
-Test all program modules
-
-Debug errors and improve performance
-
-Verify functionality of features
-
-🔸 Bhavya — Documentation + Data Management
-
-Prepare documentation and reports
-
-Maintain screenshots and test cases
-
-Organize data files and README
 
 📅 Week-by-Week Mini Plan
 ✅ Week 1
