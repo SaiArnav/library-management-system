@@ -87,39 +87,61 @@ Helps users discover related books easily
 ✅ Week 1
 
 📌 Finalize project structure
+
 📌 Setup GitHub repository
+
 📌 Create basic menu-driven program
+
 📌 Implement Add/View Book features
+
 📌 Setup file handling
 
 ✅ Week 2
 
 📌 Implement Search, Register, Issue, and Return features
+
 📌 Add fine calculation logic
+
 📌 Connect all program modules
+
 📌 Test file storage system
+
 
 ✅ Week 3
 
 📌 Implement recommendation feature
+
 📌 Improve reports and user interaction
+
 📌 Perform testing and debugging
+
 📌 Prepare final presentation and demo
 
-🛠️ Technologies Used
+
+🛠️ Technologies Used:
 
 💻 C++
+
 💻 Object-Oriented Programming (OOP)
+
 💻 File Handling
+
 💻 Text Files
+
 💻 GitHub
 
-🎯 Project Outcome
+
+🎯 Project Outcome:
 
 The project provides an efficient and user-friendly way to manage library operations using a console-based system. It reduces manual work, improves record management, and demonstrates programming concepts such as:
 
+
 ✔️ File Handling
+
 ✔️ Object-Oriented Programming
+
 ✔️ Menu-Driven Applications
+
 ✔️ Data Management
+
 ✔️ Basic AI Recommendation Logic
