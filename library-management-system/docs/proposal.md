@@ -74,7 +74,7 @@ Helps users discover related books easily
 
 ➤ Verify functionality of features
 
-🔸 Bhavya — Documentation + Data Management
+🔸 Bhavya Sri— Documentation + Data Management
 
 ➤ Prepare documentation and reports
 
