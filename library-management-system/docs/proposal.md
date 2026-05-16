@@ -40,7 +40,7 @@ Improves user experience
 Demonstrates intelligent system behaviour
 Helps users discover related books easily
 
-👨‍💻 Team Member Roles
+👨‍💻 Team Member Roles:
 
 🔸 Arnav — Program Integration Lead
 
@@ -58,8 +58,32 @@ Helps users discover related books easily
 
 ➤ Create fine calculation system
 
+🔸 Govardhan — File Handling Lead
 
-📅 Week-by-Week Mini Plan
+➤ Implement file handling operations
+
+➤ Maintain book and member records
+
+➤ Handle data storage and retrieval
+
+🔸 Ganesh — Testing & Debugging
+
+➤ Test all program modules
+
+➤ Debug errors and improve performance
+
+➤ Verify functionality of features
+
+🔸 Bhavya — Documentation + Data Management
+
+➤ Prepare documentation and reports
+
+➤ Maintain screenshots and test cases
+
+➤ Organize data files and README
+
+📅 Week-by-Week Mini Plan:
+
 ✅ Week 1
 
 📌 Finalize project structure
