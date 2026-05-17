@@ -1,13 +1,19 @@
-/* fine.c */
-
 #include <stdio.h>
 #include "fine.h"
 
-void overdueReport() {
-    printf("\n+----------------------------------------+\n");
-    printf("|            OVERDUE REPORT              |\n");
-    printf("+----------------------------------------+\n");
-    printf("| Member ID : 101                        |\n");
-    printf("| Fine Amount : Rs. 50                   |\n");
-    printf("+----------------------------------------+\n\n");
+int calculateFine(int dueDay, int returnDay) {
+
+    int lateDays;
+    int fine;
+
+    if(returnDay <= dueDay) {
+
+        return 0;
+    }
+
+    lateDays = returnDay - dueDay;
+
+    fine = lateDays * 2;
+
+    return fine;
 }
