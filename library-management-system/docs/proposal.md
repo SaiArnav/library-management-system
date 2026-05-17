@@ -1,7 +1,6 @@
-📚 **Library Book Issue & Return System (Console Version)
-**
-🔹** Project Description
-**
+📚 Library Book Issue & Return System (Console Version)
+
+🔹 Project Description
 The Library Book Issue & Return System is a console-based application developed to simplify library management operations. The project helps librarians manage books, register members, issue and return books, search records, and generate reports efficiently through a menu-driven interface.
 
 The system is implemented using C programming and file handling techniques for permanent data storage. It provides an easy and efficient way to maintain library records without using manual registers.
