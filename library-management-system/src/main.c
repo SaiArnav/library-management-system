@@ -1,5 +1,10 @@
 #include "library.h"
 #include "recommendation.h"
+#include "book.h"
+#include "member.h"
+#include "search.h"
+#include "issue.h"
+#include "fine.h"
 
 extern void addBook();
 extern void updateBook();
