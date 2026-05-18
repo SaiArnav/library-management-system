@@ -29,7 +29,7 @@ int main() {
     printf("║   WELCOME TO LIBRARY MANAGEMENT SYSTEM ║\n");
     printf("╚════════════════════════════════════════╝\n");
 
-  o {
+  do {
         showMainMenu();
         scanf("%d", &choice);
         getchar(); 
