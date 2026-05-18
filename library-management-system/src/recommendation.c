@@ -39,7 +39,7 @@ int authorCount = 0;
 int genreCount = 0;
 
 for(int i = 0; i < issueCount; i++) {
-  if( issue[i].memberId == memberId && issues[i].isReturned == 1) {
+  if( issues[i].memberId == memberId && issues[i].isReturned == 1) {
     int bookIndex = findBookIndexById(issues[i].bookId);
                 if (bookIndex != -1) {
                 int authorExists = 0;
@@ -75,7 +75,7 @@ for(int i = 0; i < issueCount; i++) {
     for (int i = 0; i < bookCount && recCount < 5; i++) {
         if (books[i].isIssued == 0) {  
             for (int j = 0; j < authorCount; j++) {
-                if (strcmp(g_books[i].author, favoriteAuthors[j]) == 0) {
+                if (strcmp(books[i].author, favoriteAuthors[j]) == 0) {
                     int alreadyAdded = 0;
                     for (int k = 0; k < recCount; k++) {
                         if (recommendations[k].id == books[i].id) {
