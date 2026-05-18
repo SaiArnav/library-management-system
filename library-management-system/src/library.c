@@ -27,7 +27,7 @@ void initializeSystem() {
   issues = (IssueRecord*)malloc(issueCapacity * sizeof(IssueRecord));
 
   if (!books || !members || !issues) {
-  printf(Memory allocation failed!\n");
+  printf("Memory allocation failed!\n");
   exit(0);
   }
   }
@@ -67,7 +67,7 @@ void addIssueToArray(IssueRecord issue) {
 
 int findBookIndexById(int bookId) {
   for(int i = 0; i < bookCount; i++) {
-    if(book[i].id == bookId) {
+    if(books[i].id == bookId) {
       return i;
     }
   }
@@ -85,7 +85,7 @@ int findMemberIndexById(int memberId) {
 
 int findIssueIndexById(int issueId) {
      for(int i = 0; i < issueCount; i++) {
-        if(issues[i].issueId == issueId) {
+        if(issues[i].id == issueId) {
           return i;
         }
      }
@@ -93,7 +93,7 @@ int findIssueIndexById(int issueId) {
 }
 
 void loadBooksFromFile() {
-  FILE file = fopen(BOOKS_FILE, "rb");
+  FILE* file = fopen(BOOKS_FILE, "rb");
   if(file) {
     bookCount = 0;
     Book book;
@@ -135,7 +135,7 @@ void loadIssuesFromFile() {
         IssueRecord issue;
         while (fread(&issue, sizeof(IssueRecord), 1, file)) {
             addIssueToArray(issue);
-            if (issue.issueId >= nextIssueId) {
+            if (issue.id >= nextIssueId) {
                 nextIssueId = issue.issueId + 1;
             }
         }
