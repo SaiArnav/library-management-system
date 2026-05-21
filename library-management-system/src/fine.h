@@ -1,6 +1,10 @@
 #ifndef FINE_H
 #define FINE_H
 
-int calculateFine(int dueDay, int returnDay);
+#include "library.h"
+
+// Report Functions
+void generateMemberReport();
+void generateFineReport();
 
 #endif
