@@ -11,6 +11,7 @@
 #define MAX_GENRE 50
 #define MAX_NAME 100
 #define MAX_EMAIL 15
+#define MAX_PHONE 15
 
 typedef struct {
   int id;
@@ -31,8 +32,8 @@ typedef struct {
   int id;
   int bookId;
   int memberId;
-  time_t isssueDate;
-  time_t dueDte;
+  time_t issueDate;
+  time_t dueDate;
   time_t returnDate;
   double fine;
   int isReturned;
