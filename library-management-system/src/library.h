@@ -21,6 +21,13 @@ typedef struct {
 } Book;
 
 typedef struct {
+    int id;
+    char name[MAX_NAME];
+    char email[MAX_EMAIL];
+    char phone[MAX_PHONE];
+} Member;
+
+typedef struct {
   int id;
   int bookId;
   int memberId;
