@@ -6,20 +6,20 @@
 #include "issue.h"
 #include "fine.h"
 
-extern void addBook();
-extern void updateBook();
-extern void deleteBook();
-extern void displayAllBooks();
-extern void registerMember();
-extern void updateMember();
-extern void deleteMember();
-extern void displayAllMembers();
+extern void addNewBook();
+extern void updateBookDetails();
+extern void removeBook();
+extern void showAllBooks();
+extern void registerNewMember();
+extern void updateMemberDetails();
+extern void removeMember();
+extern void showAllMembers();
 extern void issueBook();        
 extern void returnBook();       
 extern void listIssuedBooks(); 
-extern void searchByTitle();
-extern void searchByAuthor();
-extern void searchByGenre();
+extern void searchBooksByTitle();
+extern void searchBooksByAuthor();
+extern void searchBooksByGenre();
 extern void overdueReport();  
 extern void memberReport();
 extern void fineReport();
