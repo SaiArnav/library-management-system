@@ -30,9 +30,9 @@ int main() {
   initializeSystem();
   loadAllDataFromFiles();
 
-      printf("\n╔════════════════════════════════════════╗\n");
-    printf("║   WELCOME TO LIBRARY MANAGEMENT SYSTEM ║\n");
-    printf("╚════════════════════════════════════════╝\n");
+      printf("\n=======================================\n");
+    printf("=   WELCOME TO LIBRARY MANAGEMENT SYSTEM =\n");
+    printf("==========================================\n");
 
   do {
         showMainMenu();
