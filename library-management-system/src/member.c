@@ -3,7 +3,6 @@
 #include <string.h>
 #include "member.h"
 
-// External global variables from library.c
 extern Member* members;
 extern int memberCount;
 extern int memberCapacity;
@@ -114,7 +113,6 @@ void removeMember() {
         return;
     }
     
-    // Check if member has any issued books
     int hasIssuedBooks = 0;
     for (int i = 0; i < issueCount; i++) {
         if (issues[i].memberId == memberId && issues[i].isReturned == 0) {
@@ -137,7 +135,6 @@ void removeMember() {
         return;
     }
     
-    // Shift remaining members
     for (int i = index; i < memberCount - 1; i++) {
         members[i] = members[i + 1];
     }
