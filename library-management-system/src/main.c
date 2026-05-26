@@ -41,62 +41,65 @@ int main() {
         
         switch(choice) {
             case 1:
-                addBook();
+                addNewBook();
                 break;
             case 2:
-                updateBook();
+                updateBookDetails();
                 break;
             case 3:
-                deleteBook();
+                removeBook();
                 break;
             case 4:
-                displayAllBooks();
+                showAllBooks();
                 break;
             case 5:
-                registerMember();
+               registerNewMember();
                 break;
             case 6:
                 updateMember();
                 break;
             case 7:
-                deleteMember();
+                updateMemberDetails();
                 break;
             case 8:
-                displayAllMembers();
+                removeMember();
                 break;
-            case 9:
+            case 9: 
+               showAllMembers();
+               break;
+            case 10:
                 issueBook();
                 break;
-            case 10:
+            case 11:
                 returnBook();
                 break;
-            case 11:
-                searchByTitle();
-                break;
             case 12:
-                searchByAuthor();
+                searchBooksByTitle());
                 break;
             case 13:
-                searchByGenre();
+                searchBooksByAuthor();
                 break;
             case 14:
-                listIssuedBooks();
+                searchBooksByGenre();
                 break;
             case 15:
-                overdueReport();
+                listIssuedBooks();
                 break;
             case 16:
-                memberReport();
+                overdueReport();
                 break;
             case 17:
-                fineReport();
+                memberReport();
                 break;
             case 18:
+                fineReport();
+                break;
+            case 19:
                 printf("\nEnter Member ID for personalized recommendations: ");
                 scanf("%d", &memberIdForRec);
                 recommendBooksForMember(memberIdForRec);
                 break;
-            case 19:
+            case 20:
                 printf("\nSaving all data to files...\n");
                 saveAllDataToFiles();
                 printf("Thank you for using Library Management System!\n");
@@ -106,6 +109,6 @@ int main() {
             default:
                 printf("Invalid choice! Please enter a number between 1-19.\n");
         }
-    } while(choice != 19);
+    } while(choice != 20);
 shutdownSystem();
 }
