@@ -6,7 +6,6 @@
 #include "issue.h"
 #include "fine.h"
 
-// External Variables
 extern IssueRecord* issues;
 extern int issueCount;
 extern int issueCapacity;
