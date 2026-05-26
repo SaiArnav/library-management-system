@@ -170,20 +170,3 @@ void showAllMembers() {
     printf("+-----+------------------+---------------------------+---------------+\n");
     printf("\nTotal Members: %d\n", memberCount);
 }
-
-int findMemberIndexById(int memberId) {
-    for (int i = 0; i < memberCount; i++) {
-        if (members[i].id == memberId) {
-            return i;
-        }
-    }
-    return -1;
-}
-
-void saveMembersToFile() {
-    FILE* file = fopen(MEMBERS_FILE, "wb");
-    if (file) {
-        fwrite(members, sizeof(Member), memberCount, file);
-        fclose(file);
-    }
-}
