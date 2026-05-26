@@ -3,7 +3,6 @@
 #include <string.h>
 #include "book.h"
 
-// External global variables from library.c
 extern Book* books;
 extern int bookCount;
 extern int bookCapacity;
@@ -28,8 +27,7 @@ void addNewBook() {
     
     newBook.id = nextBookId++;
     newBook.isIssued = 0;
-    
-    // Add to dynamic array
+
     if (bookCount >= bookCapacity) {
         bookCapacity *= 2;
         books = (Book*)realloc(books, bookCapacity * sizeof(Book));
@@ -128,7 +126,6 @@ void removeBook() {
         return;
     }
     
-    // Shift remaining books
     for (int i = index; i < bookCount - 1; i++) {
         books[i] = books[i + 1];
     }
@@ -163,25 +160,8 @@ void showAllBooks() {
     printf("\nTotal Books: %d\n", bookCount);
 }
 
-int findBookIndexById(int bookId) {
-    for (int i = 0; i < bookCount; i++) {
-        if (books[i].id == bookId) {
-            return i;
-        }
-    }
-    return -1;
-}
-
 int isBookAvailable(int bookId) {
     int index = findBookIndexById(bookId);
     if (index == -1) return 0;
     return (books[index].isIssued == 0);
-}
-
-void saveBooksToFile() {
-    FILE* file = fopen(BOOKS_FILE, "wb");
-    if (file) {
-        fwrite(books, sizeof(Book), bookCount, file);
-        fclose(file);
-    }
 }
