@@ -22,7 +22,7 @@ extern int memberCount;
 // Recommendation Function
 extern void suggestBooksSimilarToReturnedBook(int returnedBookId);
 
-void issueBookToMember() {
+void issueBook() {
 
     int bookId;
     int memberId;
@@ -79,7 +79,7 @@ void issueBookToMember() {
 
     IssueRecord newIssue;
 
-    newIssue.id = nextIssueId++;
+    newIssue.issueId = nextIssueId++;
 
     newIssue.bookId = bookId;
 
@@ -87,7 +87,7 @@ void issueBookToMember() {
 
     newIssue.isssueDate = time(NULL);
 
-    newIssue.dueDte =
+    newIssue.dueDate =
         newIssue.isssueDate + (dueDays * 24 * 60 * 60);
 
     newIssue.returnDate = 0;
@@ -102,7 +102,7 @@ void issueBookToMember() {
 
     printf("\nBook Issued Successfully!\n");
 
-    printf("Issue ID : %d\n", newIssue.id);
+    printf("Issue ID : %d\n", newIssue.issueId);
 
     printf("Book     : %s\n",
            books[bookIndex].title);
@@ -111,12 +111,12 @@ void issueBookToMember() {
            members[memberIndex].name);
 
     printf("Due Date : %s",
-           ctime(&newIssue.dueDte));
+           ctime(&newIssue.dueDate));
 
     saveIssuesToFile();
 }
 
-void returnBookFromMember() {
+void returnBook() {
 
     int issueId;
 
@@ -146,7 +146,7 @@ void returnBookFromMember() {
     issues[issueIndex].isReturned = 1;
 
     double seconds =
-        difftime(now, issues[issueIndex].dueDte);
+        difftime(now, issues[issueIndex].dueDate);
 
     if(seconds > 0) {
 
@@ -159,8 +159,6 @@ void returnBookFromMember() {
 
         issues[issueIndex].fine = 0;
     }
-
-    // Mark Book Available
 
     int bookIndex =
         findBookIndexById(issues[issueIndex].bookId);
@@ -175,7 +173,6 @@ void returnBookFromMember() {
     printf("Fine Amount : Rs. %.0f\n",
            issues[issueIndex].fine);
 
-    // AI Recommendation
     suggestBooksSimilarToReturnedBook(
         issues[issueIndex].bookId
     );
@@ -183,7 +180,7 @@ void returnBookFromMember() {
     saveIssuesToFile();
 }
 
-void showCurrentlyIssuedBooks() {
+void listIssuedBooks() {
 
     int found = 0;
 
@@ -200,7 +197,7 @@ void showCurrentlyIssuedBooks() {
                 findMemberIndexById(issues[i].memberId);
 
             printf("\nIssue ID : %d\n",
-                   issues[i].id);
+                   issues[i].issueId);
 
             printf("Book     : %s\n",
                    books[bookIndex].title);
@@ -209,7 +206,7 @@ void showCurrentlyIssuedBooks() {
                    members[memberIndex].name);
 
             printf("Due Date : %s",
-                   ctime(&issues[i].dueDte));
+                   ctime(&issues[i].dueDate));
 
             printf("-----------------------------\n");
 
@@ -223,7 +220,7 @@ void showCurrentlyIssuedBooks() {
     }
 }
 
-void showOverdueBooksReport() {
+void overdueReport() {
 
     time_t now = time(NULL);
 
@@ -234,10 +231,10 @@ void showOverdueBooksReport() {
     for(int i = 0; i < issueCount; i++) {
 
         if(issues[i].isReturned == 0 &&
-           now > issues[i].dueDte) {
+           now > issues[i].dueDate) {
 
             double seconds =
-                difftime(now, issues[i].dueDte);
+                difftime(now, issues[i].dueDate);
 
             int days =
                 (int)(seconds / (60 * 60 * 24));
@@ -251,7 +248,7 @@ void showOverdueBooksReport() {
                 findMemberIndexById(issues[i].memberId);
 
             printf("\nIssue ID      : %d\n",
-                   issues[i].id);
+                   issues[i].issueId);
 
             printf("Book          : %s\n",
                    books[bookIndex].title);
