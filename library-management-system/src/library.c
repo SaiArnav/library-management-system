@@ -85,7 +85,7 @@ int findMemberIndexById(int memberId) {
 
 int findIssueIndexById(int issueId) {
      for(int i = 0; i < issueCount; i++) {
-        if(issues[i].id == issueId) {
+        if(issues[i].issueId == issueId) {
           return i;
         }
      }
@@ -136,13 +136,13 @@ void loadIssuesFromFile() {
         while (fread(&issue, sizeof(IssueRecord), 1, file)) {
             addIssueToArray(issue);
             if (issue.id >= nextIssueId) {
-                nextIssueId = issue.id + 1;
+                nextIssueId = issue.issueId + 1;
             }
         }
         fclose(file);
         printf("Loaded %d issue records from file.\n", issueCount);
     } else {
-        printf("📋 No existing issues file.\n");
+        printf("No existing issues file.\n");
     }
 }
 
