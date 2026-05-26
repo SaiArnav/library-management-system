@@ -10,7 +10,7 @@
 #define MAX_AUTHOR 100
 #define MAX_GENRE 50
 #define MAX_NAME 100
-#define MAX_EMAIL 15
+#define MAX_EMAIL 100
 #define MAX_PHONE 15
 
 typedef struct {
@@ -29,7 +29,7 @@ typedef struct {
 } Member;
 
 typedef struct {
-  int id;
+  int issueId;
   int bookId;
   int memberId;
   time_t issueDate;
