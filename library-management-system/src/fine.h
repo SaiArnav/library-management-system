@@ -3,8 +3,7 @@
 
 #include "library.h"
 
-// Report Functions
-void generateMemberReport();
-void generateFineReport();
+void memberReport(); 
+void fineReport();
 
 #endif
