@@ -1,24 +1,16 @@
 #ifndef ISSUE_H
 #define ISSUE_H
 
-struct Date {
+#include "library.h"
 
-    int day;
-    int month;
-    int year;
-};
+// Issue Functions
+void issueBookToMember();
+void returnBookFromMember();
+void showCurrentlyIssuedBooks();
+void showOverdueBooksReport();
 
-struct Issue {
-
-    int bookId;
-    int memberId;
-
-    struct Date issueDate;
-    struct Date dueDate;
-};
-
-void issueBook();
-void returnBook();
-void viewIssuedBooks();
+// Helper Functions
+int findIssueIndexById(int issueId);
+void saveIssuesToFile();
 
 #endif
