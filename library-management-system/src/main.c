@@ -71,7 +71,7 @@ int main() {
                 returnBook();
                 break;
             case 11:
-                searchBooksByTitle());
+                searchBooksByTitle();
                 break;
             case 12:
                 searchBooksByAuthor();
