@@ -56,50 +56,47 @@ int main() {
                registerNewMember();
                 break;
             case 6:
-                updateMember();
+              updateMemberDetails();
                 break;
             case 7:
-                updateMemberDetails();
-                break;
-            case 8:
                 removeMember();
                 break;
-            case 9: 
+            case 8: 
                showAllMembers();
                break;
-            case 10:
+            case 9:
                 issueBook();
                 break;
-            case 11:
+            case 10:
                 returnBook();
                 break;
-            case 12:
+            case 11:
                 searchBooksByTitle());
                 break;
-            case 13:
+            case 12:
                 searchBooksByAuthor();
                 break;
-            case 14:
+            case 13:
                 searchBooksByGenre();
                 break;
-            case 15:
+            case 14:
                 listIssuedBooks();
                 break;
-            case 16:
+            case 15:
                 overdueReport();
                 break;
-            case 17:
+            case 16:
                 memberReport();
                 break;
-            case 18:
+            case 17:
                 fineReport();
                 break;
-            case 19:
+            case 18:
                 printf("\nEnter Member ID for personalized recommendations: ");
                 scanf("%d", &memberIdForRec);
                 recommendBooksForMember(memberIdForRec);
                 break;
-            case 20:
+            case 19:
                 printf("\nSaving all data to files...\n");
                 saveAllDataToFiles();
                 printf("Thank you for using Library Management System!\n");
@@ -109,6 +106,6 @@ int main() {
             default:
                 printf("Invalid choice! Please enter a number between 1-19.\n");
         }
-    } while(choice != 20);
+    } while(choice != 19);
 shutdownSystem();
 }
