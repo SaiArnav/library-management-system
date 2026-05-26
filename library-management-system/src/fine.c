@@ -52,7 +52,7 @@ void memberReport() {
     }
 }
 
-void generateFineReport() {
+void fineReport() {
 
     printf("\n===== FINE REPORT =====\n");
 
