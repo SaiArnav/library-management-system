@@ -4,7 +4,6 @@
 
 #include "fine.h"
 
-// External Variables
 extern IssueRecord* issues;
 extern int issueCount;
 
@@ -14,7 +13,7 @@ extern int bookCount;
 extern Member* members;
 extern int memberCount;
 
-void generateMemberReport() {
+void memberReport() {
 
     printf("\n===== MEMBER REPORT =====\n");
 
@@ -74,7 +73,7 @@ void generateFineReport() {
                 );
 
             printf("\nIssue ID    : %d\n",
-                   issues[i].id);
+                   issues[i].issueId);
 
             printf("Book        : %s\n",
                    books[bookIndex].title);
