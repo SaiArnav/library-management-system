@@ -3,13 +3,11 @@
 
 #include "library.h"
 
-// Issue Functions
-void issueBookToMember();
-void returnBookFromMember();
-void showCurrentlyIssuedBooks();
-void showOverdueBooksReport();
+void issueBook();
+void returnBook();
+void listIssuedBooks();
+void overdueReport();
 
-// Helper Functions
 int findIssueIndexById(int issueId);
 void saveIssuesToFile();
 
