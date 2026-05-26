@@ -136,7 +136,7 @@ void loadIssuesFromFile() {
         while (fread(&issue, sizeof(IssueRecord), 1, file)) {
             addIssueToArray(issue);
             if (issue.id >= nextIssueId) {
-                nextIssueId = issue.issueId + 1;
+                nextIssueId = issue.id + 1;
             }
         }
         fclose(file);
