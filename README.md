@@ -217,16 +217,6 @@ Thank You for Using Library Management System
 
 ---
 
-## Data Structures Used
-
-```
-unordered_map<int, Book> books;
-unordered_map<string, Member> members;
-vector<IssueRecord> issuedBooks;
-```
-
----
-
 ## Fine Calculation
 
 ```
