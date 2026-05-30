@@ -1,53 +1,251 @@
-# 📚 Library Management System
-
-This is a complete console-based library management system built in C++ with STL for efficient book and member management.
+# 📚 LIBRARY MANAGEMENT SYSTEM
 
 ## Project Overview
 
-A menu-driven C++ program managing a library catalogue and member issue records. Books and members are stored using STL containers (unordered_map) for fast in-memory operations. The system supports adding books and members, issuing a book with a due-date timestamp, returning it with automatic overdue-fine calculation (₹2 per day), and printing reports of all overdue borrowings. A rule-based AI recommendation engine suggests similar books upon return.
+A menu-driven console application developed in C++ using STL containers for efficient library operations. The system manages books, members, book issue/return records, fine calculation, searching, reporting, and recommendation features.
 
 ---
 
-## Team Members:-
-```
-| Role                             | Name              |
---------------------------------------------------------
-| Menu & Logic Developer           | Govardhan & Arnav | 
-| STL & Data Structures Logic      | Arnav & Shrejal   |
-| Search & Report                  | Bhavya            |
-| AI Suggestion Engine Developer   | Ganesh            |
-```
----
-## Project Structure
-```
-library_system/
-│
-├── library.h          # Class declarations & structure definitions
-├── library.cpp        # All function implementations
-├── main.cpp           # Menu driver & user interface
-└── README.md          # Project documentation
-```
+## Team Members
+
+| Role                           | Name              |
+| ------------------------------ | ----------------- |
+| Menu & Logic Developer         | Govardhan & Arnav |
+| STL & Data Structures Logic    | Arnav & Shrejal   |
+| Search & Report                | Bhavya            |
+| AI Suggestion Engine Developer | Ganesh            |
+
 ---
 
-## Key Features
+## Main Menu
 
 ```
-Feature                          Description
-------------------------------------------------------------------------
-- Add Book	                     Add new books with title, author, genre
-- Update Book	                 Modify existing book details
-- Delete Book	                 Remove book (only if not issued)
-- Register Member	             Add new library members
-- Update Member	                 Modify member information
-- Delete Member	                 Remove member from system
-- Issue Book	                 Issue book with due date calculation
-- Return Book	                 Process return with fine calculation (₹2/day)
-- Search by Title	             Find books by title keyword
-- Search by Author	             Find books by author keyword
-- Search by Genre	             Find books by genre keyword
-- List Issued Books	             View all currently borrowed books
-- Overdue Report	             Generate report sorted by fine amount
-- AI Suggestions	             Rule-based recommendations on return
+========== LIBRARY MANAGEMENT SYSTEM ==========
+1. Add Book
+2. Update Book
+3. Delete Book
+4. Register Member
+5. Update Member
+6. Delete Member
+7. Issue Book
+8. Return Book
+9. Search Book by Title
+10. Search Book by Author
+11. Search Book by Genre
+12. List Issued Books
+13. Generate Overdue Report
+14. AI Book Suggestions
+15. Display All Books
+16. Display All Members
+17. Exit
+===============================================
+Enter your choice:
 ```
 
 ---
+
+## Features
+
+### 1. Add Book
+
+```
+Enter Book ID: 101
+Enter Title: Data Structures
+Enter Author: Mark Allen
+Enter Genre: Computer Science
+
+Book added successfully.
+```
+
+### 2. Update Book
+
+```
+Enter Book ID to update: 101
+
+New Title: Advanced Data Structures
+Book updated successfully.
+```
+
+### 3. Delete Book
+
+```
+Enter Book ID: 101
+
+Book deleted successfully.
+```
+
+### 4. Register Member
+
+```
+Enter Member ID: M001
+Enter Member Name: Bhavya
+
+Member registered successfully.
+```
+
+### 5. Update Member
+
+```
+Enter Member ID: M001
+
+New Name: Bhavya Sri
+
+Member updated successfully.
+```
+
+### 6. Delete Member
+
+```
+Enter Member ID: M001
+
+Member deleted successfully.
+```
+
+### 7. Issue Book
+
+```
+Enter Book ID: 102
+Enter Member ID: M001
+
+Issue Date : 01-05-2026
+Due Date   : 15-05-2026
+
+Book issued successfully.
+```
+
+### 8. Return Book
+
+```
+Enter Book ID: 102
+
+Return Date : 20-05-2026
+
+Overdue Days : 5
+Fine         : ₹10
+
+Book returned successfully.
+```
+
+### 9. Search by Title
+
+```
+Enter Title Keyword: Data
+
+Matching Books:
+101  Data Structures
+102  Advanced Data Structures
+```
+
+### 10. Search by Author
+
+```
+Enter Author Name: Mark Allen
+
+Matching Books:
+101 Data Structures
+```
+
+### 11. Search by Genre
+
+```
+Enter Genre: Computer Science
+
+Matching Books:
+101 Data Structures
+102 Algorithms
+```
+
+### 12. List Issued Books
+
+```
+Issued Books
+
+Book ID   Member ID   Due Date
+--------------------------------
+102       M001        15-05-2026
+105       M003        18-05-2026
+```
+
+### 13. Overdue Report
+
+```
+Overdue Books
+
+Book ID   Member ID   Days Late   Fine
+---------------------------------------
+102       M001           5         ₹10
+105       M003           3         ₹6
+```
+
+### 14. AI Suggestions
+
+```
+Based on previous borrowing history:
+
+Recommended Books:
+1. Operating Systems
+2. Computer Networks
+3. Database Management Systems
+```
+
+### 15. Display All Books
+
+```
+Book ID   Title                 Author
+-----------------------------------------
+101       Data Structures       Mark Allen
+102       Algorithms            Thomas
+103       DBMS                  Korth
+```
+
+### 16. Display All Members
+
+```
+Member ID   Name
+-----------------------
+M001        Bhavya Sri
+M002        Govardhan
+M003        Ganesh
+```
+
+### 17. Exit
+
+```
+Thank You for Using Library Management System
+```
+
+---
+
+## Data Structures Used
+
+```
+unordered_map<int, Book> books;
+unordered_map<string, Member> members;
+vector<IssueRecord> issuedBooks;
+```
+
+---
+
+## Fine Calculation
+
+```
+Fine = Overdue Days × ₹2
+```
+
+Example:
+
+```
+Days Late = 5
+Fine = 5 × 2 = ₹10
+```
+
+---
+
+## Output
+
+```
+Library Management System executed successfully.
+Books, Members, Issue/Return records, Searching,
+Reports and AI Suggestions are managed through
+a menu-driven console interface.
+```
