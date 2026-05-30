@@ -2,18 +2,19 @@
 
 ## Project Overview
 
-A menu-driven console application developed in C++ using STL containers for efficient library operations. The system manages books, members, book issue/return records, fine calculation, searching, reporting, and recommendation features.
+A menu-driven console application developed in C using Data Structures for efficient library operations. The system manages books, members, book issue/return records, fine calculation, searching, reporting, and recommendation features.
 
 ---
 
 ## Team Members
 
-| Role                           | Name              |
-| ------------------------------ | ----------------- |
-| Menu & Logic Developer         | Govardhan & Arnav |
-| STL & Data Structures Logic    | Arnav & Shrejal   |
-| Search & Report                | Bhavya            |
-| AI Suggestion Engine Developer | Ganesh            |
+| Role                                     | Name              |
+| ---------------------------------------- | ----------------- |
+| Core Library & AI recommendation         |  Arnav            |
+| Book, Member & Search                    | Govardhan         |
+| Issue, Fine & Reports                    | Shrejal           |
+| Documentation                            | Bhavya            |
+| Output Management & tester               | Ganesh            |
 
 ---
 
