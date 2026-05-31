@@ -17,6 +17,23 @@ A menu-driven console application developed in C using Data Structures for effic
 | Output Management & tester               | Ganesh            |
 
 ---
+## Folder Structure
+
+```
+library-management-system/
+│
+├── src/
+├── data/
+│   ├── books.dat
+│   ├── members.dat
+│   └── issued.dat
+│
+├── outputs/
+├── docs/
+│   
+└── README.md
+```
+---
 
 ## Main Menu
 
