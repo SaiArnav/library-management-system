@@ -17,16 +17,11 @@ A console-based library management system written in C. It manages books, member
 ```
 library-management-system/
 ├── src/
-│ ├── main.c, library.c, recommendation.c
-│ ├── book.c, member.c, search.c
-│ ├── issue.c, fine.c
-│ └── *.h files
 ├── data/
 │ ├── books.dat, members.dat, issued.dat
 ├── docs/
-│ ├── proposal.md, report.md, flowchart.png, screenshots/
+│ ├── proposal.md, report.md, flowchart.png
 └── output/
-│ ├── member_report.txt, fine_report.txt, issue_report.txt, overdue_report.txt
 ```
 
 ## 4. System Flow
