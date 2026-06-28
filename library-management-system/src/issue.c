@@ -84,10 +84,10 @@ void issueBook() {
 
     newIssue.memberId = memberId;
 
-    newIssue.isssueDate = time(NULL);
+    newIssue.issueDate = time(NULL);
 
     newIssue.dueDate =
-        newIssue.isssueDate + (dueDays * 24 * 60 * 60);
+        newIssue.issueDate + (dueDays * 24 * 60 * 60);
 
     newIssue.returnDate = 0;
 
